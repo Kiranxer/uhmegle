@@ -1,0 +1,13 @@
+{
+  "name": "random-chat",
+  "version": "1.0.0",
+  "description": "Simple random 1-to-1 text chat (Uhmegle-style MVP)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "socket.io": "^4.8.0"
+  }
+}
