@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Random Chat</h1>
+
+    <div class="status" id="status">Click "Start" to find someone.</div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="nextBtn" disabled>Next</button>
+    </div>
+
+    <div class="chat-window" id="chatWindow"></div>
+
+    <form id="chatForm" class="chat-form">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Type a message..."
+        autocomplete="off"
+      />
+      <button type="submit" id="sendBtn" disabled>Send</button>
+    </form>
+  </div>
+
+  <!-- Socket.IO client -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
